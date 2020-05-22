@@ -82,7 +82,7 @@ def processConfig(lines):
            currentLine = processOption(lines,currentLine,outputFile,configFile)
         else:
             sourceFile = currentLine.split(' ')[1].strip()
-            sourceFile = open('axtls-code/' + sourceFile,'r')
+            sourceFile = open( sourceFile,'r')
             lines = sourceFile.readlines() + lines
             sourceFile.close()
             if(lines):
