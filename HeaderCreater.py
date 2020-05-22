@@ -94,7 +94,7 @@ def processConfig(lines):
 
 def main():
     lines = None
-    with open('axtls-code/config/Config.in','r') as mainConfig:
+    with open('config/Config.in','r') as mainConfig:
         lines = mainConfig.readlines()
     processConfig(lines)
 
